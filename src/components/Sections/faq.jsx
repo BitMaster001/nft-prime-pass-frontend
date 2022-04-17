@@ -13,7 +13,7 @@ const Faq = () => {
 
         <Text>What do I need to have to mint a NFT? Just make sure you have a crypto wallet like MetaMask with ETH in it. You can buy ETH on many exchanges like Coinbase, Binance, or Crypto.com.</Text>
 
-        <Text>Why are you building on Ethereum? Won't gas fees be high? Ethereum is the main blockchain for nfts, we will do our best and make sure gas fes are as low as we can make them.</Text>
+        <Text>Why are you building on Ethereum? Won&apos;t gas fees be high? Ethereum is the main blockchain for nfts, we will do our best and make sure gas fes are as low as we can make them.</Text>
 
         <Text>Is there rarity? Why should I buy more than 1? No, each nft will have the same privileges, but if you own more than 1 nft you will get another vote in what we do next. There will also be more benefits in the future.</Text>
 
