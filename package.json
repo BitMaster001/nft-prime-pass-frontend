@@ -19,11 +19,17 @@
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-awesome-reveal": "^3.8.1",
     "react-dom": "17.0.2",
+    "react-modal": "^3.14.4",
+    "react-redux": "^8.0.0",
     "react-vertical-timeline-component": "^3.5.2",
+    "redux": "^4.2.0",
+    "redux-thunk": "^2.4.1",
     "sharp": "^0.30.3",
     "smoothscroll-polyfill": "^0.4.4",
     "styled-jsx-plugin-postcss": "^4.0.1",
-    "tailwind-styled-components": "^2.1.6"
+    "tailwind-styled-components": "^2.1.6",
+    "web3": "^1.7.3",
+    "web3-eth-contract": "^1.7.3"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.4",
