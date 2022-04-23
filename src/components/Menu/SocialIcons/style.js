@@ -4,7 +4,7 @@ const s = {
   SocialIconsContainer: tw.div`
     flex justify-center items-center gap-[15px]
   `,
-  IconContainer: tw.div`
+  IconContainer: tw.a`
     relative cursor-pointer
 
     mobile:w-[20px] 

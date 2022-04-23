@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     loader: 'imgix',
-    path: 'https://prime-pass-developing.netlify.app/',
+    path: 'https://primepassnft.com/',
   },
 }
 

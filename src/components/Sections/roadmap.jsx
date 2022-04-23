@@ -1,7 +1,5 @@
-import tw from "tailwind-styled-components";
 import { SectionTitle } from "./SectionTitle";
 import { Text } from 'components/Text'
-import { useState, useEffect } from "react";
 
 const Roadmap = () => {
   return (
