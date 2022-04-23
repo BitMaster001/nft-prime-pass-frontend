@@ -9,7 +9,7 @@ const Faq = () => {
       <div className="flex flex-col gap-8">
         <Text>What is Prime Pass? Prime Pass is a NFT Project with the best utility and very good art!</Text>
 
-        <Text>When is the mint date and what is the price? The mint date is TBA and the price is 0.08 ETH.</Text>
+        <Text>When is the mint date and what is the price? The mint date is April 23rd at 6am PST and the price is 0.08 ETH.</Text>
 
         <Text>What do I need to have to mint a NFT? Just make sure you have a crypto wallet like MetaMask with ETH in it. You can buy ETH on many exchanges like Coinbase, Binance, or Crypto.com.</Text>
 
