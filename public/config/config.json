@@ -1,14 +1,14 @@
 {
-  "CONTRACT_ADDRESS": "0x40852cc8FdfC34d78D7bA83e90549b6525bDdCc3",
-  "SCAN_LINK": "https://rinkeby.etherscan.io/address/0x40852cc8FdfC34d78D7bA83e90549b6525bDdCc3",
+  "CONTRACT_ADDRESS": "0x83F71E3A9bD77B06Dfe36616bf93821725737BD8",
+  "SCAN_LINK": "https://etherscan.io/address/0x83F71E3A9bD77B06Dfe36616bf93821725737BD8",
   "NETWORK": {
-    "NAME": "Rinkeby",
+    "NAME": "Ethereum",
     "SYMBOL": "ETH",
-    "ID": 4
+    "ID": 1
   },
-  "NFT_NAME": "BaiHu",
-  "SYMBOL": "BaiHu",
-  "MAX_SUPPLY": 500,
+  "NFT_NAME": "Prime Pass",
+  "SYMBOL": "Prime Pass",
+  "MAX_SUPPLY": 1000,
   "WEI_COST": 0,
   "DISPLAY_COST": 0,
   "GAS_LIMIT": 285000,

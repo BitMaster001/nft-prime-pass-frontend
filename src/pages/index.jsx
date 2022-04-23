@@ -13,8 +13,8 @@ import Modal from 'react-modal'
 
 import * as s from '../pagestyles/index'
 
-const truncate = (input, len) =>
-  input.length > len ? `${input.substring(0, len)}...` : input;
+const truncate = (input) =>
+  input?.length > 0 ? `${input.substring(0, 6)}...${input.substr(-4)}` : input;
 
 const Index = () => {
   const [modalIsOpen, setIsOpen] = useState(false);
@@ -94,20 +94,16 @@ const Index = () => {
 
   const incrementMintAmount = () => {
     let newMintAmount = mintAmount + 1;
-    if (newMintAmount > 10) {
-      newMintAmount = 10;
+    if (newMintAmount > 1000) {
+      newMintAmount = 1000;
     }
     setMintAmount(newMintAmount);
   };
 
   const getData = async () => {
     if (blockchain.account !== "" && blockchain.smartContract !== null) {
-      const curTime = new Date((new Date().toLocaleString('en-US', { timeZone: 'America/New_York' }))).getTime() / 1000
       const saleConfig = await (await blockchain.smartContract.methods.saleConfig()).call()
-      const publicsaleStartTime = saleConfig.publicsaleStartTime;
-      const weiCost = curTime < publicsaleStartTime
-        ? saleConfig.presalePrice
-        : saleConfig.publicsalePrice
+      const weiCost = saleConfig.publicsalePrice
       const displayCost = weiCost / 10 ** 18
       SET_CONFIG({
         ...CONFIG,
@@ -157,9 +153,8 @@ const Index = () => {
         className="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] mobile:w-[94%] tablet:w-[60%] border border-white rounded-lg bg-[#252525] mobile:p-4 ipad:p-6"
       >
         <div>
-          <p>{blockchain.account ?? ""}</p>
           <div className="flex justify-between items-center">
-            <p className="text-[22px] font-bold">Number Of NFT To Mint</p>
+            <p className="text-[22px] font-bold">Number Of NFT To Mint &nbsp;&nbsp;&nbsp;<span className="text-[18px] opacity-70">{truncate(blockchain.account, 4) ?? ""}</span></p>
             <Image src="/images/close.png" width={16} height={16} layout="fixed" alt="" className="invert cursor-pointer" onClick={closeModal} />
           </div>
           
@@ -181,7 +176,7 @@ const Index = () => {
           <s.StatisticsInfo>
             <span>Total Price:</span>
             <span className="text-[#F23319]">
-              {(CONFIG.DISPLAY_COST * mintAmount).toFixed(2)}ETH
+              {CONFIG.DISPLAY_COST > 0 ? `${(CONFIG.DISPLAY_COST * mintAmount).toFixed(2)}ETH` : ""}
         </span>
           </s.StatisticsInfo>
           {/* 

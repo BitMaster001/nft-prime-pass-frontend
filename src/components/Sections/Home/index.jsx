@@ -11,9 +11,9 @@ const Home = ({ openModal }) => {
       <div className="basis-1/2 flex flex-col justify-center items-center text-center px-4 py-8">
         <s.P1>Prime Pass NFT</s.P1>
 
-        <Text className="max-w-[500px]">A NFT collection of 1000 MetaCards heading towards Opensea! The project with the BEST utility and art made just for you!</Text>
+        <Text className="max-w-[500px]">An NFT collection of 1000 MetaCards heading towards Opensea! The project with the BEST utility and art made just for you!</Text>
 
-        <button className="mt-4 px-10 py-2 border border-white rounded-lg mobile:text-base ipad:text-[30px] font-bold" onClick={openModal}>Mint</button>
+        <button className="mt-4 px-10 py-2 bg-[#EE2222]/90 hover:bg-[#FF1111] rounded-lg mobile:text-base ipad:text-[30px] font-bold" onClick={openModal}>Mint</button>
       </div>
     </section>
   );
